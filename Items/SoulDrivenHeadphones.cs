@@ -14,8 +14,8 @@ namespace InfernumModeMusic.Items
 
         public override void SetDefaults()
         {
-            Item.width = 50;
-            Item.height = 64;
+            Item.width = 58;
+            Item.height = 76;
             Item.useTime = Item.useAnimation = 4;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;

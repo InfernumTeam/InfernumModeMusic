@@ -433,8 +433,8 @@ namespace InfernumModeMusic.Projectiles
 
         public override void SetDefaults()
         {
-            Projectile.width = 26;
-            Projectile.height = 26;
+            Projectile.width = 20;
+            Projectile.height = 28;
             Projectile.friendly = true;
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
