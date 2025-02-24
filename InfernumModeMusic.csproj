@@ -6,7 +6,4 @@
     <LangVersion>latest</LangVersion>
 	<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="localization\ru-RU.hjson" />
-  </ItemGroup>
 </Project>
