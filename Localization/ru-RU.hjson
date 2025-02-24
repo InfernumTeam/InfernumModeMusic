@@ -1,0 +1,145 @@
+﻿Mods: {
+	InfernumModeMusic: {
+		Projectiles.SoulDrivenHeadphonesProj.DisplayName: Душепроводящие наушники
+
+		Items: {
+			SoulDrivenHeadphones: {
+				DisplayName: Душепроводящие наушники
+				Tooltip:
+					'''
+					Позволяет выбрать и послушать темы побеждённых боссов из Инфернума, а также переключить специальные темы для боссов
+					Пока вы держитесь за них, вы неясно чувствуете мистическое присутствие
+					Вы также слышите звуки страстно играющих инструментов
+					'''
+			}
+		}
+
+		Configs: {
+			InfernumMusicConfig: {
+				DisplayName: Конфигурация
+
+				OverrideCalTheme: {
+					Label: Заменить тему Каламитас
+					Tooltip: Определяет, будет ли трек Каламитас заменён. Если выключено, Stained Brutal Calamity будет играть если установлен Calamity's Music Mod.
+				}
+			}
+		}
+
+		MusicDisplay: {
+			AdultEidolonWyrm: {
+				DisplayName: Vocitus Terminus
+				Author: авт. PinpinNeon
+			}
+
+			BrainOfCthulhu: {
+				DisplayName: Intellect of the Crimson
+				Author: авт. PinpinNeon
+			}
+
+			Calamitas: {
+				DisplayName: Scars of Calamity
+				Author: авт. PinpinNeon
+			}
+
+			LunaticCultist: {
+				DisplayName: Eidolic Ancestry
+				Author: авт. PinpinNeon
+			}
+
+			DukeFishron: {
+				DisplayName: Razorblade Monsoon
+				Author: авт. PinpinNeon
+			}
+
+			EaterOfWorlds: {
+				DisplayName: Maw of the Corruption
+				Author: авт. PinpinNeon
+			}
+
+			EmpressOfLight: {
+				DisplayName: Shining Kaleidoscope ~ Prismatic Radiance
+				Author: авт. PinpinNeon
+			}
+
+			EyeOfCthulhu: {
+				DisplayName: Seer of the Night
+				Author: авт. PinpinNeon
+			}
+
+			Golem: {
+				DisplayName: Icon of the Sun
+				Author: авт. PinpinNeon
+			}
+
+			KingSlime: {
+				DisplayName: Gelatinous Dynasty
+				Author: авт. PinpinNeon
+			}
+
+			MechBosses: {
+				DisplayName: Inferior Fabrications
+				Author: авт. PinpinNeon
+			}
+
+			Minibosses: {
+				DisplayName: Misanthropic Encounters
+				Author: авт. PinpinNeon
+			}
+
+			MoonLord: {
+				DisplayName: The End Of An Olden Era
+				Author: авт. PinpinNeon
+			}
+
+			Plantera: {
+				DisplayName: Floral Animosity
+				Author: авт. PinpinNeon
+			}
+
+			QueenBee: {
+				DisplayName: Royal Retaliation
+				Author: авт. PinpinNeon
+			}
+
+			QueenSlime: {
+				DisplayName: Crowned Before One's End
+				Author: авт. PinpinNeon
+			}
+
+			Skeletron: {
+				DisplayName: Warden of the Damned
+				Author: авт. PinpinNeon
+			}
+
+			WallOfFlesh: {
+				DisplayName: One's Ending, Another's Beginning
+				Author: авт. PinpinNeon
+			}
+
+			Draedon: {
+				DisplayName: Their Fabricator
+				Author: авт. PinpinNeon
+			}
+
+			ExoMechBosses: {
+				DisplayName: Catastrophic Fabrications
+				Author: авт. PinpinNeon
+			}
+
+			ZenithFabrications: {
+				DisplayName: Zenith Fabrications
+				Author: авт. PinpinNeon
+			}
+
+			TitleScreen: {
+				DisplayName: Sky After Rain
+				Author: авт. PinpinNeon
+			}
+
+			StormBeforeDawn: {
+				DisplayName: Storm Before Dawn
+				Author: авт. PinpinNeon
+			}
+		}
+	}
+}
