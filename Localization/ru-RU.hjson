@@ -20,7 +20,7 @@
 
 				OverrideCalTheme: {
 					Label: Заменить тему Каламитас
-					Tooltip: Определяет, будет ли трек Каламитас заменён. Если выключена, «Stained Brutal Calamity» будет играть если установлен Calamity's Music Mod.
+					Tooltip: Определяет, будет ли трек Каламитас заменён. Если выключена, «Stained Brutal Calamity» будет играть, если установлен Calamity's Music Mod.
 				}
 			}
 		}
