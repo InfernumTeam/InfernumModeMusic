@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/Plantera");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.Plantera);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.Plantera)&& InfernumMusicConfig.Instance.OverridePlanteraTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)10;
     }

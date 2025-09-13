@@ -10,7 +10,7 @@ namespace InfernumModeMusic.MusicOverrides
 
         public override bool IsSceneEffectActive(Player player)
         {
-            if (!InfernumModeMusic.InfernumActive)
+            if (!InfernumModeMusic.InfernumActive || !InfernumMusicConfig.Instance.OverrideMinibossTheme)
                 return false;
 
             if (InfernumModeMusic.CanPlayMusic(NPCID.BigMimicCorruption))

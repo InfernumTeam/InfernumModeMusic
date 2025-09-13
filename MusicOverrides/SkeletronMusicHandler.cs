@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/Skeletron");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.SkeletronHead);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.SkeletronHead)&& InfernumMusicConfig.Instance.OverrideSkeletronTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)11;
     }

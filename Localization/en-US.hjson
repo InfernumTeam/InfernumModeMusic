@@ -16,10 +16,130 @@ Mods: {
 
 		Configs: {
 			InfernumMusicConfig: {
-				DisplayName: Config
+				DisplayName: Client Config
+
+				Headers: {
+					MusicOverrides: Music Overrides
+					ExoMechs: Exo Mechs
+				}
+
+				OverrideKingSlimeTheme: {
+					Label: King Slime
+					Tooltip: If enabled, Gelatinous Dynasty will play.
+				}
+
+				OverrideEyeOfCthulhuTheme: {
+					Label: Eye Of Cthulhu
+					Tooltip: If enabled, Seer of the Night will play.
+				}
+
+				OverrideEaterOfWorldsTheme: {
+					Label: Eater Of Worlds
+					Tooltip: If enabled, Maw of the Corruption will play.
+				}
+
+				OverrideBrainOfCthulhuTheme: {
+					Label: Brain Of Cthulhu
+					Tooltip: If enabled, Intellect of the Crimson will play.
+				}
+
+				OverrideQueenBeeTheme: {
+					Label: Queen Bee
+					Tooltip: If enabled, Royal Retaliation will play.
+				}
+
+				OverrideSkeletronTheme: {
+					Label: Skeletron
+					Tooltip: If enabled, Warden of the Damned will play.
+				}
+
+				OverrideWallOfFleshTheme: {
+					Label: Wall Of Flesh
+					Tooltip: If enabled, One's Ending, Another's Beginning will play.
+				}
+
+				OverrideMinibossTheme: {
+					Label: Minibosses
+					Tooltip: If enabled, Misanthropic Encounters will play.
+				}
+
+				OverrideDreadnautilusTheme: {
+					Label: Dreadnautilus
+					Tooltip: If enabled, Misanthropic Encounters will play.
+				}
+
+				OverrideQueenSlimeTheme: {
+					Label: Queen Slime
+					Tooltip: If enabled, Crowned Before One's End will play.
+				}
+
+				OverrideTwinsTheme: {
+					Label: The Twins
+					Tooltip: If enabled, Inferior Fabrications will play.
+				}
+
+				OverrideDestroyerTheme: {
+					Label: The Destroyer
+					Tooltip: If enabled, Inferior Fabrications will play.
+				}
+
+				OverrideSkeletronPrimeTheme: {
+					Label: Skeletron Prime
+					Tooltip: If enabled, Inferior Fabrications will play.
+				}
+
+				OverridePlanteraTheme: {
+					Label: Plantera
+					Tooltip: If enabled, Floral Animosity will play.
+				}
+
+				OverrideGolemTheme: {
+					Label: Golem
+					Tooltip: If enabled, Icon of the Sun will play.
+				}
+
+				OverrideDukeFishronTheme: {
+					Label: Duke Fishron
+					Tooltip: If enabled, Razorblade Monsoon will play.
+				}
+
+				OverrideEmpressOfLightTheme: {
+					Label: Empress Of Light
+					Tooltip: If enabled, Shining Kaleidoscope ~ Prismatic Radiance will play.
+				}
+
+				OverrideLunaticCultistTheme: {
+					Label: Lunatic Cultist
+					Tooltip: If enabled, Eidolic Ancestry will play.
+				}
+
+				OverrideMoonLordTheme: {
+					Label: Moon Lord
+					Tooltip: If enabled, The End Of An Olden Era will play.
+				}
+
+				OverrideAdultEidolonWyrmTheme: {
+					Label: Adult Eidolon Wyrm
+					Tooltip: If enabled, Vocitus Terminus will play.
+				}
+
+				PlayCatastrophicFabrications: {
+					Label: Catastrophic Fabrications
+					Tooltip: If enabled, Catastrophic Fabrications will play.
+				}
+
+				PlayZenithFabrications: {
+					Label: Zenith Fabrications
+					Tooltip: If enabled, Zenith Fabrications will play on Infernum difficulty in the latter half of the fight.
+				}
+
+				PlayTheirFabricator: {
+					Label: Their Fabricator
+					Tooltip: If enabled, Their Fabricator will play at the end of the fight.
+				}
 
 				OverrideCalTheme: {
-					Label: Override Calamitas' Theme
+					Label: Supreme Calamitas
 					Tooltip: Determines whether Calamitas' track is overridden. If disabled, Stained Brutal Calamity will play instead, assuming Calamity's Music Mod is enabled.
 				}
 			}
