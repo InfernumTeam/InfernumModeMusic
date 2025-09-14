@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/EmpressOfLight");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.HallowBoss);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.HallowBoss) && InfernumMusicConfig.Instance.OverrideEmpressOfLightTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)10;
     }

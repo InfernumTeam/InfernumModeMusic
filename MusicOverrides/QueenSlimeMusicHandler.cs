@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/QueenSlime");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.QueenSlimeBoss);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.QueenSlimeBoss)&& InfernumMusicConfig.Instance.OverrideQueenSlimeTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)10;
     }

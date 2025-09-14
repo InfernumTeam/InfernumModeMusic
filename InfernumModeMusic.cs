@@ -14,6 +14,8 @@ namespace InfernumModeMusic
 
         internal static Mod Calamity;
 
+        internal static Mod CalamityMusic;
+
         internal static Mod MusicDisplay;
 
         public static bool InfernumActive
@@ -39,8 +41,8 @@ namespace InfernumModeMusic
         public static bool CanPlayMusic(int npcID)
         {
             bool result = !BossRushActive;
-            if (Infernum != null)
-                result &= (bool)Infernum.Call("CanPlayMusicForNPC", npcID) && InfernumActive;
+            if (Infernum != null && InfernumActive)
+                result &= (bool)Infernum.Call("CanPlayMusicForNPC", npcID);
             else
                 result &= NPC.AnyNPCs(npcID);
             return result;
@@ -53,6 +55,8 @@ namespace InfernumModeMusic
             ModLoader.TryGetMod("InfernumMode", out Infernum);
             Calamity = null;
             ModLoader.TryGetMod("CalamityMod", out Calamity);
+            CalamityMusic = null;
+            ModLoader.TryGetMod("CalamityModMusic", out CalamityMusic);
 		}
 
 		public override void PostSetupContent()
@@ -69,9 +73,9 @@ namespace InfernumModeMusic
             if (args[0] is not string)
                 return new ArgumentException("ERROR: First argument must be a string function name.");
 
-            string methodName = args[0].ToString();
-            if (methodName == "OverrideCalTheme")
-                return InfernumMusicConfig.Instance.OverrideCalTheme;
+            if (typeof(InfernumMusicConfig).GetProperty(args[0].ToString(), BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public) is PropertyInfo ThemeOverride && ThemeOverride != null)
+                return ThemeOverride.GetValue(InfernumMusicConfig.Instance);
+
             return null;
         }
 

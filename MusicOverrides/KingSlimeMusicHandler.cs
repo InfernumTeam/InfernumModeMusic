@@ -8,8 +8,8 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/KingSlime");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.KingSlime);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.KingSlime) && InfernumMusicConfig.Instance.OverrideKingSlimeTheme;
 
-        public override SceneEffectPriority Priority => SceneEffectPriority.BossLow;
+        public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
     }
 }

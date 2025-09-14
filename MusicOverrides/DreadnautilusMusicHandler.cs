@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/Dreadnautilus");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.BloodNautilus);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.BloodNautilus) && InfernumMusicConfig.Instance.OverrideDreadnautilusTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)10;
     }

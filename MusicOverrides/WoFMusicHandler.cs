@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/WallOfFlesh");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.WallofFlesh);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.WallofFlesh)&& InfernumMusicConfig.Instance.OverrideWallOfFleshTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)11;
     }

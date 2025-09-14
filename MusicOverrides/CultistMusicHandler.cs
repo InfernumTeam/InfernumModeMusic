@@ -8,7 +8,7 @@ namespace InfernumModeMusic.MusicOverrides
     {
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Sounds/Music/LunaticCultist");
 
-        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.CultistBoss);
+        public override bool IsSceneEffectActive(Player player) => InfernumModeMusic.CanPlayMusic(NPCID.CultistBoss) && InfernumMusicConfig.Instance.OverrideLunaticCultistTheme;
 
         public override SceneEffectPriority Priority => (SceneEffectPriority)10;
     }
