@@ -142,6 +142,11 @@ Mods: {
 					Label: Supreme Calamitas
 					Tooltip: Determines whether Calamitas' track is overridden. If disabled, Stained Brutal Calamity will play instead, assuming Calamity's Music Mod is enabled.
 				}
+
+				ToggleAllMusic: {
+					Label: Toggle All Music Overrides
+					Tooltip: Enabling this will enable all music overrides
+				}
 			}
 		}
 
