@@ -161,6 +161,66 @@ namespace InfernumModeMusic
             get; set;
         }
 
+        [DefaultValue(true)]
+        public bool ToggleAllMusic
+        {
+            get
+            {
+                return
+                OverrideKingSlimeTheme &&
+                OverrideEyeOfCthulhuTheme &&
+                OverrideEaterOfWorldsTheme &&
+                OverrideBrainOfCthulhuTheme &&
+                OverrideQueenBeeTheme &&
+                OverrideSkeletronTheme &&
+                OverrideWallOfFleshTheme &&
+                OverrideMinibossTheme &&
+                OverrideDreadnautilusTheme &&
+                OverrideQueenSlimeTheme &&
+                OverrideTwinsTheme &&
+                OverrideDestroyerTheme &&
+                OverrideSkeletronPrimeTheme &&
+                OverridePlanteraTheme &&
+                OverrideGolemTheme &&
+                OverrideDukeFishronTheme &&
+                OverrideEmpressOfLightTheme &&
+                OverrideLunaticCultistTheme &&
+                OverrideMoonLordTheme &&
+                OverrideAdultEidolonWyrmTheme &&
+                PlayCatastrophicFabrications &&
+                PlayZenithFabrications &&
+                PlayTheirFabricator &&
+                OverrideCalTheme;
+            }
+            set
+            {
+                OverrideKingSlimeTheme = value;
+                OverrideEyeOfCthulhuTheme = value;
+                OverrideEaterOfWorldsTheme = value;
+                OverrideBrainOfCthulhuTheme = value;
+                OverrideQueenBeeTheme = value;
+                OverrideSkeletronTheme = value;
+                OverrideWallOfFleshTheme = value;
+                OverrideMinibossTheme = value;
+                OverrideDreadnautilusTheme = value;
+                OverrideQueenSlimeTheme = value;
+                OverrideTwinsTheme = value;
+                OverrideDestroyerTheme = value;
+                OverrideSkeletronPrimeTheme = value;
+                OverridePlanteraTheme = value;
+                OverrideGolemTheme = value;
+                OverrideDukeFishronTheme = value;
+                OverrideEmpressOfLightTheme = value;
+                OverrideLunaticCultistTheme = value;
+                OverrideMoonLordTheme = value;
+                OverrideAdultEidolonWyrmTheme = value;
+                PlayCatastrophicFabrications = value;
+                PlayZenithFabrications = value;
+                PlayTheirFabricator = value;
+                OverrideCalTheme = value;
+            }
+        }
+
         public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref NetworkText message) => false;
     }
 }
