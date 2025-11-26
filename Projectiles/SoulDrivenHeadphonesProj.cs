@@ -256,7 +256,7 @@ namespace InfernumModeMusic.Projectiles
                 HoverText = "Misanthropic Encounters - Minibosses",
                 TrackName = "Minibosses",
                 HoverTextColor = () => Color.Orange,
-                UnlockCondition = () => Main.hardMode,
+                UnlockCondition = () => (InfernumModeMusic.InfernumActive && (bool)InfernumModeMusic.Infernum?.Call("CanPlaySoulHeadphonesMusic", "Dreadnautilus")) || Main.hardMode,
                 BossIconTexture = ModContent.Request<Texture2D>("InfernumModeMusic/Items/DreadnautilusMapIcon")
             },
 
@@ -348,7 +348,7 @@ namespace InfernumModeMusic.Projectiles
                 TrackName = "AdultEidolonWyrm",
                 HoverTextColor = () => Color.Navy,
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "adultwyrm"),
-                BossIconTexture = InfernumModeMusic.Calamity is null ? TextureAssets.MagicPixel : ModContent.Request<Texture2D>("CalamityMod/NPCs/PrimordialWyrm/PrimordialWyrmHead_Head_Boss"),
+                BossIconTexture = InfernumModeMusic.Calamity is null ? TextureAssets.MagicPixel : InfernumModeMusic.Infernum?.Assets.Request<Texture2D>("Assets/BossTextures/PrimordialWyrm/PrimordialWyrmHead_Head_Boss"),
                 RequiresCalamity = true
             },
 
