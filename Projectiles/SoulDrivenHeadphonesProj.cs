@@ -256,7 +256,7 @@ namespace InfernumModeMusic.Projectiles
                 HoverText = "Misanthropic Encounters - Minibosses",
                 TrackName = "Minibosses",
                 HoverTextColor = () => Color.Orange,
-                UnlockCondition = () => Main.hardMode,
+                UnlockCondition = () => (InfernumModeMusic.InfernumActive && (bool)InfernumModeMusic.Infernum?.Call("CanPlaySoulHeadphonesMusic", "Dreadnautilus")) || Main.hardMode,
                 BossIconTexture = ModContent.Request<Texture2D>("InfernumModeMusic/Items/DreadnautilusMapIcon")
             },
 
