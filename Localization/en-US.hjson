@@ -1,4 +1,4 @@
-Mods: {
+﻿Mods: {
 	InfernumModeMusic: {
 		Projectiles.SoulDrivenHeadphonesProj.DisplayName: Soul-Driven Headphones
 
@@ -12,6 +12,45 @@ Mods: {
 					You can also hear the sounds of instruments passionately playing
 					'''
 			}
+		}
+
+		HeadphonesText: {
+			1: Now playing {0}!
+			2: "{0} will be playing during boss fights!"
+		}
+
+		BossName: {
+			// DO NOT change the - to any other symbol or the code that displays "Now playing X" won't work
+			TitleScreen: Sky After Rain - Infernum
+			KingSlime: Gelatinous Dynasty - King Slime
+			EyeOfCthulhu: Seer of the Night - The Eye of Cthulhu
+			EaterOfWorlds: Maw of the Corruption - The Eater of Worlds
+			BrainOfCthulhu: Intellect of the Crimson - The Brain of Cthulhu
+			QueenBee: Royal Retaliation - The Queen Bee
+			Skeletron: Warden of the Damned - Skeletron
+			WallOfFlesh: One's Ending, Another's Beginning - Wall of Flesh
+			Minibosses: Misanthropic Encounters - Minibosses
+			QueenSlime: Crowned before One's End - Queen Slime
+			MechBosses: Inferior Fabrications - The Mechanical Trio
+			Plantera: Floral Animosity - Plantera
+			Golem: Icon of the Sun - Golem
+			DukeFishron: Razorblade Typhoon - Duke Fishron
+			EmpressOfLight: Shining Kaleidoscope - The Empress of Light
+			LunaticCultist: Eidolic Ancestry - The Lunatic Cultist
+			BereftVassal: Duel for a Lost Kingdom - The Bereft Vassal
+			MoonLord: The End of an Olden Era - The Moon Lord
+			PrimordialWyrm: Vocitus Terminus - The Primordial Wyrm
+			ExoMechsOld: Inferior Fabrications (Exo Remix) - The Exo Mechs
+			ExoMechs: Catastrophic Fabrications - The Exo Mechs
+			ExoMechsAlt: Zenith Fabrications - The Exo Mechs
+			Draedon: Their Fabricator - Draedon
+			Calamitas: Scars of Calamity - Calamitas
+			StormBeforeDawn: Storm Before Dawn - Infernum
+		}
+
+		Errors: {
+			1: ERROR: No function name specified. First argument must be a function name.
+			2: ERROR: First argument must be a string function name.
 		}
 
 		Configs: {
@@ -119,7 +158,7 @@ Mods: {
 				}
 
 				OverrideAdultEidolonWyrmTheme: {
-					Label: Adult Eidolon Wyrm
+					Label: Primordial Wyrm
 					Tooltip: If enabled, Vocitus Terminus will play.
 				}
 
@@ -140,7 +179,7 @@ Mods: {
 
 				OverrideCalTheme: {
 					Label: Supreme Calamitas
-					Tooltip: Determines whether Calamitas' track is overridden. If disabled, Stained Brutal Calamity will play instead, assuming Calamity's Music Mod is enabled.
+					Tooltip: If enabled, Scars of Calamity will play.
 				}
 
 				ToggleAllMusic: {

@@ -1,4 +1,4 @@
-Mods: {
+﻿Mods: {
 	InfernumModeMusic: {
 		Projectiles.SoulDrivenHeadphonesProj.DisplayName: Наушники с душеговорителями
 
@@ -8,10 +8,49 @@ Mods: {
 				Tooltip:
 					'''
 					Позволяет выбрать и послушать темы побеждённых боссов из Инфернума, а также переключать специальные темы для боссов
-					Пока Вы держитесь за них, Вы неясно чувствуете мистическое присутствие
+					Пока вы держитесь за них, вы неясно чувствуете мистическое присутствие
 					Вы также слышите звуки страстно играющих инструментов
 					'''
 			}
+		}
+
+		HeadphonesText: {
+			1: Сейчас играет «{0}»!
+			2: «{0}» будет играть во время битв с боссами!
+		}
+
+		BossName: {
+			// DO NOT change the - to any other symbol or the code that displays "Now playing X" won't work
+			TitleScreen: Sky After Rain - Инфернум
+			KingSlime: Gelatinous Dynasty - Король слизней
+			EyeOfCthulhu: Seer of the Night - Глаз Ктулху
+			EaterOfWorlds: Maw of the Corruption - Пожиратель миров
+			BrainOfCthulhu: Intellect of the Crimson - Мозг Ктулху
+			QueenBee: Royal Retaliation - Королева пчёл
+			Skeletron: Warden of the Damned - Скелетрон
+			WallOfFlesh: One's Ending, Another's Beginning - Стена плоти
+			Minibosses: Misanthropic Encounters - Мини-боссы
+			QueenSlime: Crowned before One's End - Королева слизней
+			MechBosses: Inferior Fabrications - Механическое трио
+			Plantera: Floral Animosity - Плантера
+			Golem: Icon of the Sun - Голем
+			DukeFishron: Razorblade Typhoon - Герцог Рыброн
+			EmpressOfLight: Shining Kaleidoscope - Императрица света
+			LunaticCultist: Eidolic Ancestry - Культист-лунатик
+			BereftVassal: Duel for a Lost Kingdom - Обездоленный вассал
+			MoonLord: The End of an Olden Era - Лунный лорд
+			PrimordialWyrm: Vocitus Terminus - Первородный змей
+			ExoMechsOld: Inferior Fabrications (Exo Remix) - Экзо-мехи
+			ExoMechs: Catastrophic Fabrications - Экзо-мехи
+			ExoMechsAlt: Zenith Fabrications - Экзо-мехи
+			Draedon: Their Fabricator - Дрэйдон
+			Calamitas: Scars of Calamity - Каламитас
+			StormBeforeDawn: Storm Before Dawn - Инфернум
+		}
+
+		Errors: {
+			1: ОШИБКА: Не уточнено имя функции. Первый аргумент должен быть именем функции.
+			2: ОШИБКА: Первый аргумент быть строчкой имени функции.
 		}
 
 		Configs: {
@@ -19,133 +58,133 @@ Mods: {
 				DisplayName: Конфигурация
 
 				Headers: {
-					// MusicOverrides: Music Overrides
-					// ExoMechs: Exo Mechs
+					MusicOverrides: Замена музыки
+					ExoMechs: Экзо-мехи
 				}
 
 				OverrideKingSlimeTheme: {
-					// Label: King Slime
-					// Tooltip: If enabled, Gelatinous Dynasty will play.
+					Label: Король слизней
+					Tooltip: Если включить, «Gelatinous Dynasty» будет играть.
 				}
 
 				OverrideEyeOfCthulhuTheme: {
-					// Label: Eye Of Cthulhu
-					// Tooltip: If enabled, Seer of the Night will play.
+					Label: Глаз Ктулху
+					Tooltip: Если включить, «Seer of the Night» будет играть.
 				}
 
 				OverrideEaterOfWorldsTheme: {
-					// Label: Eater Of Worlds
-					// Tooltip: If enabled, Maw of the Corruption will play.
+					Label: Пожиратель миров
+					Tooltip: Если включить, «Maw of the Corruption» будет играть.
 				}
 
 				OverrideBrainOfCthulhuTheme: {
-					// Label: Brain Of Cthulhu
-					// Tooltip: If enabled, Intellect of the Crimson will play.
+					Label: Мозг Ктулху
+					Tooltip: Если включить, «Intellect of the Crimson» будет играть.
 				}
 
 				OverrideQueenBeeTheme: {
-					// Label: Queen Bee
-					// Tooltip: If enabled, Royal Retaliation will play.
+					Label: Королева пчёл
+					Tooltip: Если включить, «Royal Retaliation» будет играть.
 				}
 
 				OverrideSkeletronTheme: {
-					// Label: Skeletron
-					// Tooltip: If enabled, Warden of the Damned will play.
+					Label: Скелетрон
+					Tooltip: Если включить, «Warden of the Damned» будет играть.
 				}
 
 				OverrideWallOfFleshTheme: {
-					// Label: Wall Of Flesh
-					// Tooltip: If enabled, One's Ending, Another's Beginning will play.
+					Label: Стена плоти
+					Tooltip: Если включить, «One's Ending, Another's Beginning» будет играть.
 				}
 
 				OverrideMinibossTheme: {
-					// Label: Minibosses
-					// Tooltip: If enabled, Misanthropic Encounters will play.
+					Label: Мини-боссы
+					Tooltip: Если включить, «Misanthropic Encounters» будет играть.
 				}
 
 				OverrideDreadnautilusTheme: {
-					// Label: Dreadnautilus
-					// Tooltip: If enabled, Misanthropic Encounters will play.
+					Label: Страшнаутилус
+					Tooltip: Если включить, «Misanthropic Encounters» будет играть.
 				}
 
 				OverrideQueenSlimeTheme: {
-					// Label: Queen Slime
-					// Tooltip: If enabled, Crowned Before One's End will play.
+					Label: Королева слизней
+					Tooltip: Если включить, «Crowned Before One's End» будет играть.
 				}
 
 				OverrideTwinsTheme: {
-					// Label: The Twins
-					// Tooltip: If enabled, Inferior Fabrications will play.
+					Label: Близнецы
+					Tooltip: Если включить, «Inferior Fabrications» будет играть.
 				}
 
 				OverrideDestroyerTheme: {
-					// Label: The Destroyer
-					// Tooltip: If enabled, Inferior Fabrications will play.
+					Label: Уничтожитель
+					Tooltip: Если включить, «Inferior Fabrications» будет играть.
 				}
 
 				OverrideSkeletronPrimeTheme: {
-					// Label: Skeletron Prime
-					// Tooltip: If enabled, Inferior Fabrications will play.
+					Label: Скелетрон Прайм
+					Tooltip: Если включить, «Inferior Fabrications» будет играть.
 				}
 
 				OverridePlanteraTheme: {
-					// Label: Plantera
-					// Tooltip: If enabled, Floral Animosity will play.
+					Label: Плантера
+					Tooltip: Если включить, «Floral Animosity» будет играть.
 				}
 
 				OverrideGolemTheme: {
-					// Label: Golem
-					// Tooltip: If enabled, Icon of the Sun will play.
+					Label: Голем
+					Tooltip: Если включить, «Icon of the Sun» будет играть.
 				}
 
 				OverrideDukeFishronTheme: {
-					// Label: Duke Fishron
-					// Tooltip: If enabled, Razorblade Monsoon will play.
+					Label: Герцог Рыброн
+					Tooltip: Если включить, «Razorblade Monsoon» будет играть.
 				}
 
 				OverrideEmpressOfLightTheme: {
-					// Label: Empress Of Light
-					// Tooltip: If enabled, Shining Kaleidoscope ~ Prismatic Radiance will play.
+					Label: Императрица света
+					Tooltip: Если включить, «Shining Kaleidoscope ~ Prismatic Radiance» будет играть.
 				}
 
 				OverrideLunaticCultistTheme: {
-					// Label: Lunatic Cultist
-					// Tooltip: If enabled, Eidolic Ancestry will play.
+					Label: Культист-лунатик
+					Tooltip: Если включить, «Eidolic Ancestry» будет играть.
 				}
 
 				OverrideMoonLordTheme: {
-					// Label: Moon Lord
-					// Tooltip: If enabled, The End Of An Olden Era will play.
+					Label: Лунный лорд
+					Tooltip: Если включить, «The End Of An Olden Era» будет играть.
 				}
 
 				OverrideAdultEidolonWyrmTheme: {
-					// Label: Adult Eidolon Wyrm
-					// Tooltip: If enabled, Vocitus Terminus will play.
+					Label: Первородный змей
+					Tooltip: Если включить, «Vocitus Terminus» будет играть.
 				}
 
 				PlayCatastrophicFabrications: {
-					// Label: Catastrophic Fabrications
-					// Tooltip: If enabled, Catastrophic Fabrications will play.
+					Label: Катастрофичные творения
+					Tooltip: Если включить, «Catastrophic Fabrications» будет играть.
 				}
 
 				PlayZenithFabrications: {
-					// Label: Zenith Fabrications
-					// Tooltip: If enabled, Zenith Fabrications will play on Infernum difficulty in the latter half of the fight.
+					Label: Зенит творения
+					Tooltip: Если включить, «Zenith Fabrications» будет играть на сложности Инфернум в последней половине битвы.
 				}
 
 				PlayTheirFabricator: {
-					// Label: Their Fabricator
-					// Tooltip: If enabled, Their Fabricator will play at the end of the fight.
+					Label: Их творец
+					Tooltip: Если включить, «Their Fabricator» будет играть в конце битвы.
 				}
 
 				OverrideCalTheme: {
-					Label: Заменить тему Каламитас
-					Tooltip: Определяет, будет ли трек Каламитас заменён. Если выключена, «Stained Brutal Calamity» будет играть, если установлен Calamity's Music Mod.
+					Label: Каламитас
+					Tooltip: Если включить, «Scars of Calamity» будет играть.
 				}
 
 				ToggleAllMusic: {
-					// Label: Toggle All Music Overrides
-					// Tooltip: Enabling this will enable all music overrides
+					Label: Включить всю замену музыки
+					Tooltip: Включите эту настройку, чтобы заменить всю музыку
 				}
 			}
 		}
@@ -153,117 +192,117 @@ Mods: {
 		MusicDisplay: {
 			AdultEidolonWyrm: {
 				DisplayName: Vocitus Terminus
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			BrainOfCthulhu: {
 				DisplayName: Intellect of the Crimson
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Calamitas: {
 				DisplayName: Scars of Calamity
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			LunaticCultist: {
 				DisplayName: Eidolic Ancestry
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			DukeFishron: {
 				DisplayName: Razorblade Monsoon
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			EaterOfWorlds: {
 				DisplayName: Maw of the Corruption
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			EmpressOfLight: {
 				DisplayName: Shining Kaleidoscope ~ Prismatic Radiance
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			EyeOfCthulhu: {
 				DisplayName: Seer of the Night
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Golem: {
 				DisplayName: Icon of the Sun
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			KingSlime: {
 				DisplayName: Gelatinous Dynasty
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			MechBosses: {
 				DisplayName: Inferior Fabrications
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Minibosses: {
 				DisplayName: Misanthropic Encounters
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			MoonLord: {
 				DisplayName: The End Of An Olden Era
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Plantera: {
 				DisplayName: Floral Animosity
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			QueenBee: {
 				DisplayName: Royal Retaliation
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			QueenSlime: {
 				DisplayName: Crowned Before One's End
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Skeletron: {
 				DisplayName: Warden of the Damned
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			WallOfFlesh: {
 				DisplayName: One's Ending, Another's Beginning
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			Draedon: {
 				DisplayName: Their Fabricator
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			ExoMechBosses: {
 				DisplayName: Catastrophic Fabrications
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			ZenithFabrications: {
 				DisplayName: Zenith Fabrications
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			TitleScreen: {
 				DisplayName: Sky After Rain
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 
 			StormBeforeDawn: {
 				DisplayName: Storm Before Dawn
-				Author: авт. PinpinNeon
+				Author: от PinpinNeon
 			}
 		}
 	}

@@ -9,6 +9,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
@@ -133,9 +134,9 @@ namespace InfernumModeMusic.Projectiles
                 {
                     if (Main.myPlayer == player.whoAmI && player.GetModPlayer<CustomMusicPlayer>().CurrentTrackName != TrackName)
                     {
-                        string chatText = $"Now playing {HoverText.Split(" - ")[0]}!";
+                        LocalizedText chatText = Language.GetText("Mods.InfernumModeMusic.HeadphonesText.1").WithFormatArgs(HoverText.Split(" - ")[0]);
                         if (IsSpecialTheme)
-                            chatText = $"{HoverText.Split(" - ")[0]} will be played during boss fights!";
+                            chatText = Language.GetText("Mods.InfernumModeMusic.HeadphonesText.2").WithFormatArgs(HoverText.Split(" - ")[0]);
 
                         Main.NewText(chatText, HoverTextColor());
                         player.GetModPlayer<CustomMusicPlayer>().CurrentTrackName = TrackName;
@@ -177,7 +178,7 @@ namespace InfernumModeMusic.Projectiles
         {
             new()
             {
-                HoverText = "Sky After Rain - Infernum",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.TitleScreen"),
                 TrackName = "TitleScreen",
                 HoverTextColor = () =>
                 {
@@ -190,7 +191,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Gelatinous Dynasty - King Slime",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.KingSlime"),
                 TrackName = "KingSlime",
                 HoverTextColor = () => Color.Lerp(Color.SlateBlue, Color.LightGray, 0.2f),
                 UnlockCondition = () => NPC.downedSlimeKing,
@@ -199,7 +200,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Seer of the Night - The Eye of Cthulhu",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.EyeOfCthulhu"),
                 TrackName = "EyeOfCthulhu",
                 HoverTextColor = () => Color.Lerp(Color.DarkRed, Color.Gray, 0.4f),
                 UnlockCondition = () => NPC.downedBoss1,
@@ -208,7 +209,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Maw of the Corruption - The Eater of Worlds",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.EaterOfWorlds"),
                 TrackName = "EaterOfWorlds",
                 HoverTextColor = () => ColorSwap(Color.MediumPurple, Color.Lime, 4f),
                 UnlockCondition = () => NPC.downedBoss2,
@@ -217,7 +218,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Intellect of the Crimson - The Brain of Cthulhu",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.BrainOfCthulhu"),
                 TrackName = "BrainOfCthulhu",
                 HoverTextColor = () => ColorSwap(Color.IndianRed, Color.Yellow, 2f),
                 UnlockCondition = () => NPC.downedBoss2,
@@ -226,7 +227,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Royal Retaliation - The Queen Bee",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.QueenBee"),
                 TrackName = "QueenBee",
                 HoverTextColor = () => ColorSwap(Color.Black, Color.Yellow, 1f),
                 UnlockCondition = () => NPC.downedQueenBee,
@@ -235,7 +236,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Warden of the Damned - Skeletron",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Skeletron"),
                 TrackName = "Skeletron",
                 HoverTextColor = () => ColorSwap(Color.MediumPurple, Color.HotPink, 2f),
                 UnlockCondition = () => NPC.downedBoss3,
@@ -244,7 +245,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "One's Ending, Another's Beginning - Wall of Flesh",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.WallOfFlesh"),
                 TrackName = "WallOfFlesh",
                 HoverTextColor = () => new(158, 48, 83),
                 UnlockCondition = () => Main.hardMode,
@@ -253,7 +254,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Misanthropic Encounters - Minibosses",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Minibosses"),
                 TrackName = "Minibosses",
                 HoverTextColor = () => Color.Orange,
                 UnlockCondition = () => (InfernumModeMusic.InfernumActive && (bool)InfernumModeMusic.Infernum?.Call("CanPlaySoulHeadphonesMusic", "Dreadnautilus")) || Main.hardMode,
@@ -262,7 +263,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Crowned before One's End - Queen Slime",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.QueenSlime"),
                 TrackName = "QueenSlime",
                 HoverTextColor = () => MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.25f % 1f, Color.DeepPink, Color.HotPink, Color.Cyan * 1.3f),
                 UnlockCondition = () => NPC.downedQueenSlime,
@@ -271,7 +272,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Inferior Fabrications - The Mechanical Trio",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.MechBosses"),
                 TrackName = "MechBosses",
                 HoverTextColor = () => MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.36f % 1f, Color.Orange, Color.Red, Color.RoyalBlue),
                 UnlockCondition = () => NPC.downedMechBoss1 && NPC.downedMechBoss2 && NPC.downedMechBoss3,
@@ -280,7 +281,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Floral Animosity - Plantera",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Plantera"),
                 TrackName = "Plantera",
                 HoverTextColor = () => ColorSwap(Color.Pink, Color.Lime, 2.67f),
                 UnlockCondition = () => NPC.downedPlantBoss,
@@ -289,7 +290,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Icon of the Sun - Golem",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Golem"),
                 TrackName = "Golem",
                 HoverTextColor = () => new(168, 64, 5),
                 UnlockCondition = () => NPC.downedGolemBoss,
@@ -298,7 +299,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Razorblade Typhoon - Duke Fishron",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.DukeFishron"),
                 TrackName = "DukeFishron",
                 HoverTextColor = () => Color.Turquoise,
                 UnlockCondition = () => NPC.downedFishron,
@@ -307,7 +308,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Shining Kaleidoscope - The Empress of Light",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.EmpressOfLight"),
                 TrackName = "EmpressOfLight",
                 HoverTextColor = () => Main.hslToRgb(Main.GlobalTimeWrappedHourly * 0.4f % 1f, 0.9f, 0.55f),
                 UnlockCondition = () => NPC.downedEmpressOfLight,
@@ -316,7 +317,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Eidolic Ancestry - The Lunatic Cultist",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.LunaticCultist"),
                 TrackName = "LunaticCultist",
                 HoverTextColor = () => MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.36f % 1f, Color.Orange, Color.MediumPurple, Color.Turquoise, Color.SkyBlue),
                 UnlockCondition = () => NPC.downedAncientCultist,
@@ -325,7 +326,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Duel for a Lost Kingdom - The Bereft Vassal",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.BereftVassal"),
                 TrackName = "BereftVassal",
                 HoverTextColor = () => Color.Lerp(Color.Cyan, Color.Yellow, (float)Math.Sin(Main.GlobalTimeWrappedHourly) * 0.3f + 0.35f),
                 UnlockCondition = () => (bool)InfernumModeMusic.Infernum?.Call("CanPlaySoulHeadphonesMusic", "BereftVassal"),
@@ -335,7 +336,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "The End of an Olden Era - The Moon Lord",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.MoonLord"),
                 TrackName = "MoonLord",
                 HoverTextColor = () => ColorSwap(Color.Gray, Color.DarkCyan, 1.25f),
                 UnlockCondition = () => NPC.downedMoonlord,
@@ -344,7 +345,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Vocitus Terminus - The Primordial Wyrm",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.PrimordialWyrm"),
                 TrackName = "AdultEidolonWyrm",
                 HoverTextColor = () => Color.Navy,
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "adultwyrm"),
@@ -354,7 +355,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Inferior Fabrications (Exo Remix) - The Exo Mechs",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.ExoMechsOld"),
                 TrackName = "ExoMechBossesOld",
                 HoverTextColor = () => Color.Lerp(MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.27f % 1f, ExoPalette), Color.Silver, 0.4f),
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "ExoMechs"),
@@ -364,7 +365,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Catastrophic Fabrications - The Exo Mechs",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.ExoMechs"),
                 TrackName = "ExoMechBosses",
                 HoverTextColor = () => MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.32f % 1f, ExoPalette),
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "ExoMechs"),
@@ -373,9 +374,9 @@ namespace InfernumModeMusic.Projectiles
             },
 
 			new()
-			{
-				HoverText = "Zenith Fabrications - The Exo Mechs",
-				TrackName = "ZenithFabrications",
+            {
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.ExoMechsAlt"),
+                TrackName = "ZenithFabrications",
 				HoverTextColor = () => MulticolorLerp(Main.GlobalTimeWrappedHourly * 0.32f % 1f, ExoPalette),
 				UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "ExoMechs"),
 				BossIconTexture = InfernumModeMusic.Calamity is null ? TextureAssets.MagicPixel : ModContent.Request<Texture2D>("CalamityMod/NPCs/ExoMechs/Ares/AresBody_Head_Boss"),
@@ -384,7 +385,7 @@ namespace InfernumModeMusic.Projectiles
 
 			new()
             {
-                HoverText = "Their Fabricator - Draedon",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Draedon"),
                 TrackName = "Draedon",
                 HoverTextColor = () => new(155, 255, 255),
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "ExoMechs"),
@@ -394,7 +395,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Scars of Calamity - Calamitas",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.Calamitas"),
                 TrackName = "Calamitas",
                 HoverTextColor = () => Color.Red,
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "Calamitas"),
@@ -404,7 +405,7 @@ namespace InfernumModeMusic.Projectiles
 
             new()
             {
-                HoverText = "Storm Before Dawn - Infernum",
+                HoverText = Language.GetTextValue($"Mods.InfernumModeMusic.BossName.StormBeforeDawn"),
                 TrackName = "StormBeforeDawn",
                 HoverTextColor = () => Color.HotPink,
                 UnlockCondition = () => true,

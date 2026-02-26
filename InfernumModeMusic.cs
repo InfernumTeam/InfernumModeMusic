@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Terraria;
@@ -69,9 +69,9 @@ namespace InfernumModeMusic
 		public override object Call(params object[] args)
         {
             if (args is null || args.Length <= 0)
-                return new ArgumentException("ERROR: No function name specified. First argument must be a function name.");
+                return new ArgumentException(Language.GetTextValue("Mods.InfernumModeMusic.Errors.1"));
             if (args[0] is not string)
-                return new ArgumentException("ERROR: First argument must be a string function name.");
+                return new ArgumentException(Language.GetTextValue("Mods.InfernumModeMusic.Errors.2"));
 
             if (typeof(InfernumMusicConfig).GetProperty(args[0].ToString(), BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public) is PropertyInfo ThemeOverride && ThemeOverride != null)
                 return ThemeOverride.GetValue(InfernumMusicConfig.Instance);
