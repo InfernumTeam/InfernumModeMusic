@@ -1,4 +1,4 @@
-﻿Mods: {
+Mods: {
 	InfernumModeMusic: {
 		Projectiles.SoulDrivenHeadphonesProj.DisplayName: Наушники с душеговорителями
 
@@ -248,6 +248,11 @@
 			Minibosses: {
 				DisplayName: Misanthropic Encounters
 				Author: от PinpinNeon
+			}
+
+			Dreadnautilus: {
+				// DisplayName: Misanthropic Encounters (Dreadnautilus Variant)
+				// Author: by PinpinNeon
 			}
 
 			MoonLord: {
