@@ -290,6 +290,11 @@
 				Author: by PinpinNeon
 			}
 
+			ExoMechBossesOld: {
+				DisplayName: Inferior Fabrications (Exo Remix)
+				Author: by PinpinNeon
+			}
+
 			ExoMechBosses: {
 				DisplayName: Catastrophic Fabrications
 				Author: by PinpinNeon
@@ -297,6 +302,11 @@
 
 			ZenithFabrications: {
 				DisplayName: Zenith Fabrications
+				Author: by PinpinNeon
+			}
+
+			BereftVassal: {
+				DisplayName: Duel for a Lost Kingdom
 				Author: by PinpinNeon
 			}
 

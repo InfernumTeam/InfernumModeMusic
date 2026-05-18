@@ -107,11 +107,13 @@ namespace InfernumModeMusic
 			AddMusic("Sounds/Music/Skeletron", "Skeletron");
 			AddMusic("Sounds/Music/WallOfFlesh", "WallOfFlesh");
 			AddMusic("Sounds/Music/Draedon", "Draedon");
+            AddMusic("Sounds/Music/ExoMechBossesOld", "ExoMechBossesOld");
 			AddMusic("Sounds/Music/ExoMechBosses", "ExoMechBosses");
 			AddMusic("Sounds/Music/ZenithFabrications", "ZenithFabrications");
 			AddMusic("Sounds/Music/TitleScreen", "TitleScreen");
 			AddMusic("Sounds/Music/StormBeforeDawn", "StormBeforeDawn");
             AddMusic("Sounds/Music/Dreadnautilus", "Dreadnautilus");
+            AddMusic("Sounds/Music/BereftVassal", "BereftVassal");
         }
 	}
 }
