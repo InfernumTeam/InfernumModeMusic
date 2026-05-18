@@ -111,6 +111,7 @@ namespace InfernumModeMusic
 			AddMusic("Sounds/Music/ZenithFabrications", "ZenithFabrications");
 			AddMusic("Sounds/Music/TitleScreen", "TitleScreen");
 			AddMusic("Sounds/Music/StormBeforeDawn", "StormBeforeDawn");
-		}
+            AddMusic("Sounds/Music/Dreadnautilus", "Dreadnautilus");
+        }
 	}
 }
