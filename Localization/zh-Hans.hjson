@@ -290,6 +290,11 @@ Mods: {
 				Author: 作曲：PinpinNeon
 			}
 
+			ExoMechBossesOld: {
+				// DisplayName: Inferior Fabrications (Exo Remix)
+				// Author: by PinpinNeon
+			}
+
 			ExoMechBosses: {
 				DisplayName: 铸灾神械
 				Author: 作曲：PinpinNeon
@@ -298,6 +303,11 @@ Mods: {
 			ZenithFabrications: {
 				DisplayName: 天穹魔械
 				Author: 作曲：PinpinNeon
+			}
+
+			BereftVassal: {
+				// DisplayName: Duel for a Lost Kingdom
+				// Author: by PinpinNeon
 			}
 
 			TitleScreen: {
