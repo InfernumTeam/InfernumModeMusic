@@ -1,0 +1,3 @@
+{ModVersion}
+- Added changelogs to the steam workshop page
+- Added Music Display support for Dreadnautilus' Misanthropic Encounters theme variant, Inferior Fabrications (Exo Remix), and Duel for a Lost Kingdom
