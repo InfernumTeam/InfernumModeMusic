@@ -349,7 +349,7 @@ namespace InfernumModeMusic.Projectiles
                 TrackName = "AdultEidolonWyrm",
                 HoverTextColor = () => Color.Navy,
                 UnlockCondition = () => (bool)InfernumModeMusic.Calamity?.Call("GetBossDowned", "adultwyrm"),
-                BossIconTexture = InfernumModeMusic.Calamity is null ? TextureAssets.MagicPixel : InfernumModeMusic.Infernum?.Assets.Request<Texture2D>("Assets/BossTextures/PrimordialWyrm/PrimordialWyrmHead_Head_Boss"),
+                BossIconTexture = InfernumModeMusic.Calamity is null ? TextureAssets.MagicPixel : (InfernumModeMusic.Infernum?.Assets.Request<Texture2D>("Assets/BossTextures/PrimordialWyrm/PrimordialWyrmHead_Head_Boss") ?? InfernumModeMusic.Calamity.Assets.Request<Texture2D>("NPCs/PrimordialWyrm/PrimordialWyrmHead_Head_Boss")),
                 RequiresCalamity = true
             },
 
