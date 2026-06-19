@@ -1,3 +1,2 @@
 {ModVersion}
-- Added changelogs to the steam workshop page
-- Added Music Display support for Dreadnautilus' Misanthropic Encounters theme variant, Inferior Fabrications (Exo Remix), and Duel for a Lost Kingdom
+- Fixed an issue with Soul-Driven Headphones not functioning when calamity mod is enabled but not Infernum
